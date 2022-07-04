@@ -6,12 +6,12 @@
 
 fname = input("Enter file name: ")
 fh = open(fname)
-lst = list()
 wrd = list()
 for line in fh: 
     dum=line.split()
     for i in range(len(dum)) :
         spec_wrd=dum[i]
-        wrd.append(spec_wrd)
-        low_wrd=spec_wrd.lower()
+        if spec_wrd not in wrd :
+            wrd.append(spec_wrd)
+wrd.sort()
 print(wrd)
