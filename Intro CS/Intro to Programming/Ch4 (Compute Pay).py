@@ -3,6 +3,11 @@
 
 
 def computepay(h,r) :
+    if h<=40:
+        x=h*r
+    else
+        h -= 
+        x=h*(r*1.5)
     x=h*r
     return x
 
