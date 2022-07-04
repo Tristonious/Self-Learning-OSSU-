@@ -5,10 +5,12 @@
 def computepay(h,r) :
     if h<=40:
         x=h*r
-    else
-        h -= 
-        x=h*(r*1.5)
-    x=h*r
+    else :
+        x_norm = 40*r
+        h_over = h-40
+        r_over = r*1.5
+        x_over= h_over*r_over
+        x= x_norm + x_over
     return x
 
 hrs=input("How many hours have you worked? " )
