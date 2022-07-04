@@ -2,7 +2,6 @@
 
 largest = None
 smallest = None
-x_old=0
 while True:
     x=input ("Provide an integer: ")
     if x=='done':
