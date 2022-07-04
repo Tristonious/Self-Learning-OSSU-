@@ -5,9 +5,6 @@
 
 
 
-
-
-
 fname = input("Enter file name: ")
 fhand = open(fname)
 total=0
