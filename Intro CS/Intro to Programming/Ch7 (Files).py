@@ -16,11 +16,12 @@ for line in fhand:
     if not line.startswith("X-DSPAM-Confidence:"):
         continue
     elif line.startswith("X-DSPAM-Confidence:"):
-        line= text.find(' ')
-        cut=line[idx1:].strip()
+        cut1= line.find(' ')
+        cut=line[cut1:].strip()
         Num=float(cut)
         total=total+Num
         counts+=1
+    line=line.rstrip()
     print(line)
 print("Done")
 print("Average spam confidence:",total/counts)
